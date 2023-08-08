@@ -2,6 +2,7 @@
   --base-bg-color: rgba(26, 26, 26, 1);
   --base-font-color: rgba(240, 230, 215, 1);
   --light-bg-color: rgba(240, 230, 215, 1);
+  --base-pixel-font: 'DotGothic16';
 }
 @font-face {
   font-family: "YT323";
@@ -55,7 +56,7 @@ header,aside,main {
   padding: 10px;
 }
 header {
-  font-family: 'YT323', 'Segoe UI', Verdana, sans-serif;
+  font-family: var(--base-pixel-font), 'Segoe UI', Verdana, sans-serif;
 }
 header > span {
   display: flex;
@@ -164,8 +165,12 @@ main .data label {
   line-height: 0em;
   margin-bottom: 0.5em;
 }
-main p,h1,h2,h3,h4,h5,h6 {
+p,h1,h2,h3,h4,h5,h6 {
   margin-left: 10px;
+  font-weight: 400;
+}
+h1 {
+  font-size: 32px;
 }
 main > .employment-record > .details {
   flex: 7 50%;
@@ -223,7 +228,7 @@ body[mode="light"] footer div:not(:last-child) {
 label.pixelated {
   vertical-align: middle;
   padding: 8px;
-  font-family: 'YT323', 'Segoe UI', Verdana, sans-serif;
+  font-family: var(--base-pixel-font), 'Segoe UI', Verdana, sans-serif;
   font-weight: 400;
 }
 .svg-icon {
@@ -248,7 +253,7 @@ button {
   outline: none;
   border: none;
   font-size: 1em;;
-  font-family: 'YT323', 'Segoe UI', Verdana, sans-serif;
+  font-family: var(--base-pixel-font), 'Segoe UI', Verdana, sans-serif;
   font-weight: bolder;
   display: flex;
   align-items: center;
