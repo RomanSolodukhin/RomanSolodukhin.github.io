@@ -29,15 +29,17 @@ body[mode="light"] #button-light-on {
 body {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  overflow: hidden;
+  height: 98vh;
+  padding: 0px;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
 }
 section {
   display: flex;
   flex: 100%;
+  overflow: hidden;
+  height: 100%;
 }
 header,aside,main,footer {
   border-style: solid;
@@ -69,15 +71,15 @@ header > span div.key {
   flex: 25%;
   transition: all .2s linear;
 }
-header > span div.key:hover {
+.hover-focus:hover {
   padding-left: 15px;
   padding-right: 15px;
   transition: all .2s linear;
 }
-body[mode="dark"] header > span div.key:hover {
+body[mode="dark"] .hover-focus:hover {
   background-color: rgba(66, 66, 66, .5);
 }
-body[mode="light"] header > span div.key:hover {
+body[mode="light"] .hover-focus:hover {
   background-color: rgba(133, 133, 133, .5);
 }
 header > span div.key:not(:last-child) {
@@ -111,9 +113,23 @@ main > .employment-record {
   justify-content: space-between;
   transition: all .2s linear;
 }
-main > .employment-record:hover {
-  margin-left: 15px;
+main > .employment-record summary {
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+}
+main > .employment-record summary:not(:hover) {
+  border-bottom-color: transparent;
   transition: all .2s linear;
+} 
+main > .employment-record summary:hover {
+  cursor: pointer;
+  transition: all .2s linear;
+}
+body[mode="dark"] main > .employment-record summary:hover {
+  border-bottom-color: var(--base-font-color);
+}
+body[mode="light"] main > .employment-record summary:hover {
+  border-bottom-color: var(--base-bg-color);
 }
 body[mode="dark"] main > .employment-record:hover {
   background-color: rgba(66, 66, 66, .5);
@@ -121,20 +137,35 @@ body[mode="dark"] main > .employment-record:hover {
 body[mode="light"] main > .employment-record:hover {
   background-color: rgba(133, 133, 133, .5);
 }
-main > .employment-record:not(:last-child) {
+main > span:not(:last-child),
+main > div:not(:last-child),
+aside > div:not(:last-child),
+aside > span:not(:last-child),
+section .list li:not(:last-child) {
   border-bottom-width: 1px;
   border-bottom-style: dashed;
 }
-body[mode="dark"] main > .employment-record:not(:last-child) {
+body[mode="dark"] main > *:not(:last-child),
+body[mode="dark"] aside > *:not(:last-child),
+body[mode="dark"] section .list li:not(:last-child) {
   border-bottom-color: var(--base-font-color);
 }
-body[mode="light"] main > .employment-record:not(:last-child) {
+body[mode="light"] main > *:not(:last-child),
+body[mode="light"] aside > *:not(:last-child),
+body[mode="light"] section .list li:not(:last-child) {
   border-bottom-color: var(--base-bg-color);
 }
-main > .employment-record > .data {
+main .data {
   flex: 3 50%;
   display: flex;
   align-items: center;
+}
+main .data label {
+  line-height: 0em;
+  margin-bottom: 0.5em;
+}
+main p,h1,h2,h3,h4,h5,h6 {
+  margin-left: 10px;
 }
 main > .employment-record > .details {
   flex: 7 50%;
@@ -149,12 +180,25 @@ main > .employment-record > .details p {
   word-wrap: break-word;
 }
 aside {
-  flex: 15%;
+  flex: 25%;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main, aside {
+  overflow-y: auto;
+}
+ul {
+  margin-left: 5px;
+  padding-left: 5px;
+}
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 footer {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
+  background-color: inherit;
 }
 footer > div {
   box-sizing: border-box;
@@ -176,12 +220,14 @@ body[mode="dark"] footer div:not(:last-child) {
 body[mode="light"] footer div:not(:last-child) {
   border-right-color: var(--base-font-color);
 }
-label {
+label.pixelated {
   vertical-align: middle;
   padding: 8px;
   font-family: 'DotGothic16', 'Segoe UI', Verdana, sans-serif;
+  font-weight: 400;
 }
 .svg-icon {
+  display: block;
   height: 24px;
   width: 24px;
   padding: 4px;
@@ -215,4 +261,61 @@ body[mode="dark"] button {
 }
 body[mode="light"] button {
   color: var(--base-bg-color);
+}
+body[mode="dark"] svg path {
+  fill: var(--base-font-color);
+}
+body[mode="light"] svg path {
+  fill: var(--base-bg-color);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+.copied {
+  cursor:help;
+}
+.copied [copied]:after {
+  margin-left: 10px;
+  content: 'Copied!';
+}
+body[mode="dark"] .copied [copied]:after {
+  background-color: var(--base-font-color);
+  color: var(--base-bg-color);
+}
+body[mode="light"] .copied [copied]:after {
+  background-color: var(--base-bg-color);
+  color: var(--base-font-color);
+}
+ul.recommendations {
+  width: 50%;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+  z-index: 100;
+  /*background-color: rgba(0, 0, 0, 0.6);*/
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer !important;
+  /*old browser*/
+  background: var(--base-font-color);
+  /*webkit*/
+  /*firefox*/
+  box-sizing: border-box;
+  border: 1px solid var(--light-bg-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--base-font-color);
 }

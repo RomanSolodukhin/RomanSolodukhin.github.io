@@ -21,49 +21,43 @@
   <body mode="dark">
     <header>
       <span>
-        <div class="name" title="Roman Solodukhin">
-          <img class="svg-icon-big light" src="./icons/light/account-box.svg">
-          <img class="svg-icon-big dark" src="./icons/dark/account-box.svg">
-          <h1>
+        <div class="name copied" title="Copy on click: Roman Solodukhin" onclick="copyText('name')">
+          <svg-icon icon="account-box" class="svg-icon-big"></svg-icon>
+          <h1 id="name">
             Roman Solodukhin
           </h1>
         </div>
-        <button type="button" id="button-dark-on"><img class="svg-icon-big" src="./icons/dark/toggle-switch-off.svg">Dark</button>
-        <button type="button" id="button-light-on"><img class="svg-icon-big" src="./icons/light/toggle-switch-on.svg">Light</button>
+        <button type="button" id="button-dark-on">Dark<svg-icon class="svg-icon-big" icon="toggle-switch-off"></svg-icon></button>
+        <button type="button" id="button-light-on">Light<svg-icon class="svg-icon-big" icon="toggle-switch-on"></svg-icon></button>
       </span>
       <span>
-        <div class="key" title="QA Engineer&#10;Game Testing Specialist">
-          <img class="svg-icon light" src="./icons/light/bug.svg">
-          <img class="svg-icon dark" src="./icons/dark/bug.svg">
-          <label>
+        <div class="key hover-focus" title="QA Engineer&#10;Game Testing Specialist">
+          <svg-icon class="svg-icon" icon="bug"></svg-icon>
+          <label class="pixelated">
             QA Engineer
           </label>
         </div>
-        <div class="key" title="Game Development">
-          <img class="svg-icon light" src="./icons/light/device.svg">
-          <img class="svg-icon dark" src="./icons/dark/device.svg">
-          <label>
+        <div class="key hover-focus" title="Game Development">
+          <svg-icon class="svg-icon" icon="device"></svg-icon>
+          <label class="pixelated">
             GaveDev
           </label>
         </div>
-        <div class="key" title="5 years experience in gamedev">
-          <img class="svg-icon light" src="./icons/light/clock.svg">
-          <img class="svg-icon dark" src="./icons/dark/clock.svg">
-          <label>
+        <div class="key hover-focus" title="5 years experience in gamedev">
+          <svg-icon class="svg-icon" icon="clock"></svg-icon>
+          <label class="pixelated">
             5 years experience
           </label>
         </div>
-        <div class="key" title="28 years old man">
-          <img class="svg-icon light" src="./icons/light/battery-75.svg">
-          <img class="svg-icon dark" src="./icons/dark/battery-75.svg">
-          <label>
+        <div class="key hover-focus" title="28 years old man">
+          <svg-icon class="svg-icon" icon="battery-75"></svg-icon>
+          <label class="pixelated">
             28 y.o.
           </label>
         </div>
-        <div class="key" title="Cyprus, Limassol">
-          <img class="svg-icon light" src="./icons/light/compass.svg">
-          <img class="svg-icon dark" src="./icons/dark/compass.svg">
-          <label>
+        <div class="key hover-focus" title="Cyprus, Limassol">
+          <svg-icon class="svg-icon" icon="compass"></svg-icon>
+          <label class="pixelated">
             Cyprus, Limassol
           </label>
         </div>
@@ -71,40 +65,83 @@
     </header>
     <section>
       <aside class="left-sidebar">
-        <h1>Skills</h1>
-        Google Docs
-        QA
-        Atlassian Jira
-        Chrome Dev tools
-        Test case
-        Zed Attack Proxy
-        Charles
-        Fiddler
-        PostgreSQL
-        Node.js
-        Vue.js
-        Express.js
-        CSS
-        REST
-        PWA
-        Git
-        Typescript
-        HTML
+        <h1>Key Skills</h1>
+        <ul class="list" id="key-skills">
+          <li>
+            QA
+            <svg-icon class="svg-icon" icon="signal-3"></svg-icon>
+          </li>
+          <li>
+            Test design
+            <svg-icon class="svg-icon" icon="signal-3"></svg-icon>
+          </li>
+          <li>
+            Manual Testing
+            <svg-icon class="svg-icon" icon="signal-3"></svg-icon>
+          </li>
+          <li>
+            Google Docs
+            <svg-icon class="svg-icon" icon="signal-2"></svg-icon>
+          </li>
+          <li>
+            Atlassian Jira
+            <svg-icon class="svg-icon" icon="signal-2"></svg-icon>
+          </li>
+          <li>
+            Chrome Dev tools
+            <svg-icon class="svg-icon" icon="signal-2"></svg-icon>
+          </li>
+          <li>
+            OWASP Zed Attack Proxy
+            <svg-icon class="svg-icon" icon="signal-2"></svg-icon>
+          </li>
+          <li>
+            Fiddler
+            <svg-icon class="svg-icon" icon="signal-3"></svg-icon>
+          </li>
+          <li>
+            Charles
+            <svg-icon class="svg-icon" icon="signal-2"></svg-icon>
+          </li>
+        </ul>
+        <h1>Languages</h1>
+        <ul class="list" id="languages">
+          <li>
+            Russian – Native
+            <svg-icon class="svg-icon" icon="signal-3"></svg-icon>
+          </li>
+          <li>
+            English – Intermediate
+            <svg-icon class="svg-icon" icon="signal-2"></svg-icon>
+          </li>
+          <li>
+            Greek – Basic
+            <svg-icon class="svg-icon" icon="signal-1"></svg-icon>
+          </li>
+        </ul>
+        <h1>Other Skills</h1>
+        <ul class="list" id="other-skills">
+          <li>Typescript (Vue, Express, PWA)<svg-icon class="svg-icon" icon="signal-2"></svg-icon></li>
+          <li>HTML, SCSS<svg-icon class="svg-icon" icon="signal-2"></svg-icon></li>
+          <li>REST<svg-icon class="svg-icon" icon="signal-2"></svg-icon></li>
+          <li>PostgreSQL<svg-icon class="svg-icon" icon="signal-1"></svg-icon></li>
+          <li>Git<svg-icon class="svg-icon" icon="signal-1"></svg-icon></li>
+        </ul>
       </aside>
       <main>
         <h1>
           Work experience
         </h1>
-        <span class="employment-record">
+        <span class="employment-record hover-focus">
           <div class="data">
-            <img class="svg-icon light" src="./icons/light/calendar.svg">
-            <img class="svg-icon dark" src="./icons/dark/calendar.svg">
-            <p>Aug 2020 — Jul 2022
-              (2 years)</p>
+            <svg-icon class="svg-icon" icon="calendar"></svg-icon>
+            <label>
+              <h4>Aug 2020 — Jul 2022</h4>
+              <code>(2 years)</code>
+            </label>
           </div>
           <div class="details">
             <h4 title="MY.GAMES – IT, System Integration, Internet, Software Development">MY.GAMES</h4>
-
             <details>
               <summary>Browser and Social Games Testing Specialist, Level 2
               </summary>
@@ -123,16 +160,16 @@
             </details>
           </div>
         </span>
-        <span class="employment-record">
+        <span class="employment-record hover-focus">
           <div class="data">
-            <img class="svg-icon light" src="./icons/light/calendar.svg">
-            <img class="svg-icon dark" src="./icons/dark/calendar.svg">            <p>Dec 2018 —
-              Jul 2020
-              (1 year 8 months)</p>
+            <svg-icon class="svg-icon" icon="calendar"></svg-icon>
+              <label>
+                <h4>Dec 2018 — Jul 2020</h4>
+                <code>(1 year 8 months)</code>
+              </label>
           </div>
           <div class="details">
             <h4 title="LUCKY PLAY LTD – IT, System Integration, Internet, Software Development">CreaGames (Lucky Play LTD)</h4>
-
             <details>
               <summary>Senior Game Tester (Manual)
               </summary>
@@ -148,12 +185,13 @@
             </details>
           </div>
         </span>
-        <span class="employment-record">
+        <span class="employment-record hover-focus">
           <div class="data">
-            <img class="svg-icon light" src="./icons/light/calendar.svg">
-            <img class="svg-icon dark" src="./icons/dark/calendar.svg">            <p>Dec 2017 —
-              Dec 2018
-              (1 year 1 month)</p>
+            <svg-icon class="svg-icon" icon="calendar"></svg-icon>
+              <label>
+                <h4>Dec 2017 — Dec 2018</h4>
+                <code>(1 year 1 month)</code>
+              </label>
           </div>
           <div class="details">
             <h4 title="Destiny.Games project – IT, System Integration, Internet, Software Development">The Abyss LTD (Destiny.Games)</h4>
@@ -176,12 +214,13 @@
             </details>
           </div>
         </span>
-        <span class="employment-record">
+        <span class="employment-record hover-focus">
           <div class="data">
-            <img class="svg-icon light" src="./icons/light/calendar.svg">
-            <img class="svg-icon dark" src="./icons/dark/calendar.svg">            <p>Sep 2017
-              — Nov 2018
-              (1 year 3 months)</p>
+            <svg-icon class="svg-icon" icon="calendar"></svg-icon>
+            <label>
+              <h4>Sep 2017 — Nov 2018</h4>
+              <code>(1 year 3 months)</code>
+            </label>
           </div>
           <div class="details">
             <h4 title="Destiny.Games – IT, System Integration, Internet, Software Development">Destiny.Games</h4>
@@ -196,12 +235,13 @@
             </details>
           </div>
         </span>
-        <span class="employment-record">
+        <span class="employment-record hover-focus">
           <div class="data">
-            <img class="svg-icon light" src="./icons/light/calendar.svg">
-            <img class="svg-icon dark" src="./icons/dark/calendar.svg">            <p>May 2017 —
-              Sep 2017
-              (5 months)</p>
+            <svg-icon class="svg-icon" icon="calendar"></svg-icon>
+            <label>
+              <h4>May 2017 — Sep 2017</h4>
+              <code>(5 months)</code>
+            </label>
           </div>
           <div class="details">
             <h4 title="Destiny.Games – IT, System Integration, Internet, Software Development">Destiny.Games</h4>
@@ -219,12 +259,13 @@
             </details>
           </div>
         </span>
-        <span class="employment-record">
+        <span class="employment-record hover-focus">
           <div class="data">
-            <img class="svg-icon light" src="./icons/light/calendar.svg">
-            <img class="svg-icon dark" src="./icons/dark/calendar.svg">            <p>Dec 2014 —
-              May 2016
-              (1 year 6 months)</p>
+            <svg-icon class="svg-icon" icon="calendar"></svg-icon>
+            <label>
+              <h4>Dec 2014 — May 2016</h4>
+              <code>(1 year 6 months)</code>
+            </label>
           </div>
           <div class="details">
             <h4 title="RP-GameWorld – unofficial GTA San Andreas Multiplayer server">RP-GameWorld</h4>
@@ -242,25 +283,108 @@
             </details>
           </div>
         </span>
+        <span class="education">
+          <h1>Education</h1>
+          <div>
+            <div class="data">
+              <svg-icon class="svg-icon" icon="notebook"></svg-icon>
+              <label>
+                <h4>2015, Mikhailovsky College of Economics</h4>
+                <code>Vocational secondary</code>
+              </label>
+            </div>
+            <p><b>Speciality: </b>Economics and Accounting (in-depth training), Tax Specialist
+            </p>
+          </div>
+        </span>
+        <div>
+          <h1>Additional information</h1>
+          <label class="title">
+            <svg-icon class="svg-icon" icon="bulb"></svg-icon>
+            <h3>Recommendations</h3>
+          </label>
+          <ul class="recommendations list">
+            <li class="hover-focus">
+              <label class="title">
+                <svg-icon class="svg-icon" icon="heart"></svg-icon>
+                Barkov Ilya (Founder)
+              </label>
+              <h4>RP-GameWorld</h4>
+            </li>
+            <li class="hover-focus">
+              <label class="title">
+                <svg-icon class="svg-icon" icon="heart"></svg-icon>
+                Verigo Stanislav (Head of Botva.Online)
+              </label>
+              <h4>Destiny.Games</h4>
+            </li>
+            <li class="hover-focus">
+              <label class="title">
+              <svg-icon class="svg-icon" icon="heart"></svg-icon>
+              Goshkadera Mikhail (PM of TheAbyss (DAICO))
+              </label>
+              <h4>The Abyss (Destiny.Games)</h4>
+            </li>
+            <li class="hover-focus">
+              <label class="title">
+              <svg-icon class="svg-icon" icon="heart"></svg-icon>
+              Penzina Maria (Lead QA)
+              </label>
+              <h4>CreaGames</h4>
+            </li>
+            <li class="hover-focus">
+              <label class="title">
+              <svg-icon class="svg-icon" icon="heart"></svg-icon>
+              Lvovsky Nikolay (Department head)
+              </label>
+              <h4>MY.GAMES (IT Territory)</h4>
+            </li>
+          </ul>
+        </div>
+        <span class="about-me">
+          <h1>About me</h1>
+          <h4>Self-taught skills (without commercial experience):</h4>
+          <ul>
+            <li>SQL (PostgreSQL, creating queries, writing functions, setting permissions)</li>
+            <li>Node.js (working with npm, developing simple web applications, chatbots, automation testing
+            scripts, APIs, REST)</li>
+            <li>Git, Ubuntu, Jenkins (basic skills)</li>
+            <li>Selenium (JavaScript) with Mocha.js</li>
+            <li>AutoHotKey</li>
+            <li>Vue.js, CSS (some experience with SCSS)</li>
+            <li>Additionally, I have a basic understanding of the Greek language, including the alphabet and
+            some elementary words and phrases</li>
+          </ul>
+        </span>
       </main>
       <aside class="right-sidebar">
-        <p><b>Employment: </b>full time, part time</p>
-        <p><b>Work schedule: </b>remote working</p>
+        <div>
+          <p><b>Employment: </b>full time, part time</p>
+          <p><b>Work schedule: </b>remote working</p>
+        </div>
+        <div>
+          <label class="title">
+            <svg-icon class="svg-icon" icon="diamond"></svg-icon>
+            <b>Desired position and salary:</b>
+          </label>
+          <p>Senior Game Tester / QA Engineer</p>
+          <b>$30_000 / 28_000€ per year</b>
+        </div>
       </aside>
     </section>
     <footer>
       <div>
-        <img class="svg-icon light" src="./icons/light/message-text.svg">
-        <img class="svg-icon dark" src="./icons/dark/message-text.svg">
-        <label>
+        <svg-icon class="svg-icon" icon="message-text"></svg-icon>
+        <label class="pixelated">
           Contacts
         </label>
       </div>
-      <div class="stretch">
-        <b>+357 (94) 417-124</b> — preferably text via Telegram
+      <div class="stretch copied" onclick="copyText('phone')" title="Copy on click: +357 (94) 417-124">
+        <b id="phone">+357 (94) 417-124</b> — preferably text via Telegram
       </div>
-      <div class="stretch">
-        <b>mauvaistonn@gmail.com</b>
+      <div class="stretch title copied" onclick="copyText('email')" title="Copy on click: mauvaistonn@gmail.com">
+        <svg-icon class="svg-icon" icon="email"></svg-icon>
+        <b id="email">mauvaistonn@gmail.com</b>
       </div>
     </footer>
   </body>
