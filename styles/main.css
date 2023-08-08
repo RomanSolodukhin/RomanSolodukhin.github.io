@@ -1,0 +1,11 @@
+:root {
+  --base-bg-color: black;
+  --base-font-color: white;
+}
+
+body {
+  background-color: var(--base-bg-color);
+}
+header {
+  border: solid 3px var(--base-font-color);
+}
