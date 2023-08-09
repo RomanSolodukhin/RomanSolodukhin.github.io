@@ -443,7 +443,7 @@ code {
     top: 0;
     left: 0;
     right: 0;
-    height: 1920px;
+    height: auto;
     overflow: visible;
     content: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 50' style='background:rgb(26, 26, 26)' />");
   }
