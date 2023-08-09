@@ -334,6 +334,10 @@ code {
   font-size: 16px;
 }
 
+.-45deg {
+  transform: rotate(-45deg);
+}
+
 /* scrollbar */
 
 ::-webkit-scrollbar {
