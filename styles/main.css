@@ -307,6 +307,21 @@ button:hover {
   cursor: pointer;
   color: var(--font-color);
 }
+a {
+  display: flex;
+  align-items: center;
+  color: var(--font-color);
+  underline: none;
+  bottom-border-style: dashed;
+  bottom-border-width: 1px;
+  bottom-border-color: var(--font-color);
+  transition: opacity .2s linear;
+}
+a:hover {
+  opacity: .8;
+  border-bottom-style: solid;
+  transition: opacity .2s linear;
+}
 svg path {
   fill: var(--font-color);
 }
