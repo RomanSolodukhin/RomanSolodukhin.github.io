@@ -107,7 +107,9 @@ function copyText(elementID) {
 
 function isScrollingRight(elementID) {
   const scrollableElement = document.getElementById(elementID);
-  return scrollableElement.scrollWidth - scrollableElement.scrollLeft + scrollableElement.clientWidth < 60;
+  const result = scrollableElement.scrollLeft + scrollableElement.clientWidth;
+  console.log(scrollableElement.scrollWidth - result);
+  return scrollableElement.scrollWidth - result > 60;
 };
 
 function scrollElement (elementID, offset, buttonLeft, buttonRight) {
@@ -121,8 +123,8 @@ function scrollElement (elementID, offset, buttonLeft, buttonRight) {
     document.getElementById(buttonLeft).style.display = '';
   }
   if (isScrollingRight(elementID)) {
-    document.getElementById(buttonRight).style.display = 'none';
-  } else document.getElementById(buttonRight).style.display = '';
+    document.getElementById(buttonRight).style.display = '';
+  } else document.getElementById(buttonRight).style.display = 'none';
 };
 
 function toggleExpand (elementID) {
