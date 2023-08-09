@@ -140,9 +140,9 @@ main > .employment-record {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  main > . employment-record details {
+  main > . employment-record details, details p {
     white-space: pre-wrap;
-    max-width: 100%;
+    max-width: 90vw;
   }
 }
 main > .employment-record:hover {
