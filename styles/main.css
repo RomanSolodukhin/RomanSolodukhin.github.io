@@ -118,14 +118,14 @@ main > .employment-record {
 }
 @media (min-width: 768px) {
   main > .employment-record {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 }
 @media (max-width: 768px) {
   main > .employment-record {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 main > .employment-record:hover {
