@@ -431,7 +431,7 @@ code {
 /* print, save pdf version */
 @media print {
   body {
-    overflow: auto;
+    overflow: visible;
     height: auto;
   }
   body #button-dark-on {
@@ -449,7 +449,11 @@ code {
   a, button {
     border: solid 1px transparent;
   }
+  body section {
+    overflow: visible;
+  }
   body main {
+    overflow: visible;
     page-break-before: always;
     page-break-after: always;
   }
