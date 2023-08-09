@@ -153,7 +153,6 @@ main > .employment-record:hover {
   background-color: rgba(66, 66, 66, .5);
 }
 main > .employment-record summary {
-  white-space: pre-wrap;
   border-bottom-width: 1px;
   border-bottom-style: dashed;
 }
@@ -239,7 +238,6 @@ ul li {
 }
 footer {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: inherit;
 }
 #contacts {
   display: flex;
@@ -433,6 +431,35 @@ code {
   body {
     overflow: visible;
     height: auto;
+  }
+  body[mode="dark"]::after,
+  body[mode="dark"] section::after,
+  body[mode="dark"] main::after,
+  body[mode="dark"] aside::after,
+  body[mode="dark"] header::after,
+  body[mode="dark"] footer::after {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1920px;
+    overflow: visible;
+    content: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 50' style='background:rgb(26, 26, 26)' />");
+  }
+  body[mode="light"]::after {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    box-sizing: content-box;
+    overflow: visible;
+    content: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 50' style='background:rgb(240, 210, 200)' />");
+  }
+  :hover {
+    background-color: transparent !important;
   }
   body #button-dark-on {
     display: none;
