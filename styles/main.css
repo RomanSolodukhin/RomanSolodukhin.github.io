@@ -44,21 +44,6 @@ body {
   scroll-behavior: smooth;
   border-color: var(--font-color);
 }
-body::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 60px; /* Регулируйте ширину угла */
-  height: 60px; /* Регулируйте высоту угла */
-  background-color: var(--bg-color); /* Цвет угла */
-  /*border: solid 1px var(--font-color);*/
-  border-right-style: solid;
-  border-right-width: 1px;
-  border-right-color: var(--font-color);
-  transform: rotate(45deg); /* Поворот на 45 градусов */
-  z-index: 1; /* Поднимаем псевдоэлемент ниже контента */
-}
 @media (max-width: 768px) {
   section {
     overflow-y: auto;
