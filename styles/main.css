@@ -311,9 +311,11 @@ svg path {
   color: var(--bg-color);
   content: 'Copied!';
 }
-ul.recommendations {
-  min-width: 50%;
-  max-width: 60%;
+@media (min-width: 768px) {
+  ul.recommendations {
+    min-width: 50%;
+    max-width: 60%;
+  }
 }
 code {
   font-size: 16px;
