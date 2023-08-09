@@ -139,8 +139,10 @@ main > .employment-record {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 100%;
+  }
+  main > . employment-record details {
     white-space: pre-wrap;
+    max-width: 100%;
   }
 }
 main > .employment-record:hover {
@@ -211,7 +213,7 @@ main > .employment-record > .details h4 {
   margin-right: 10px;
 }
 main > .employment-record > .details p {
-  white-space: pre;
+  white-space: pre-wrap;
   word-wrap: break-word;
 }
 aside {
