@@ -50,7 +50,7 @@ body::before {
   top: 0;
   left: 0;
   width: 20px; /* Регулируйте ширину угла */
-  height: 40px; /* Регулируйте высоту угла */
+  height: 20px; /* Регулируйте высоту угла */
   background-color: var(--bg-color); /* Цвет угла */
   /*border: solid 1px var(--font-color);*/
   border-right-style: solid;
