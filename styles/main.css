@@ -54,7 +54,7 @@ body::before {
   background-color: var(--bg-color); /* Цвет угла */
   right-border: solid 1px var(--font-color);
   transform: rotate(45deg); /* Поворот на 45 градусов */
-  z-index: -1; /* Поднимаем псевдоэлемент ниже контента */
+  z-index: 2; /* Поднимаем псевдоэлемент ниже контента */
 }
 @media (max-width: 768px) {
   section {
@@ -92,6 +92,7 @@ header > span div {
 }
 header .keys {
   overflow-x: auto;
+  flex-wrap: wrap;
 }
 header > span div.key {
   justify-content: center;
@@ -287,12 +288,6 @@ footer div:not(:last-child) {
   height: 24px;
   width: 24px;
   padding: 4px;
-}
-body[mode="dark"] img.dark {
-  display: none;
-}
-body[mode="light"] img.light {
-  display: none;
 }
 .svg-icon-big {
   padding: 5px;
