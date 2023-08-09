@@ -447,7 +447,12 @@ code {
     overflow: visible;
     content: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 50' style='background:rgb(26, 26, 26)' />");
   }
-  body[mode="light"]::after {
+  body[mode="light"]::after,
+  body[mode="light"] section::after,
+  body[mode="light"] main::after,
+  body[mode="light"] aside::after,
+  body[mode="light"] header::after,
+  body[mode="light"] footer::after {
     position: fixed;
     z-index: -1;
     top: 0;
