@@ -315,12 +315,13 @@ a {
   border-bottom-style: dashed;
   border-bottom-width: 1px;
   border-bottom-color: var(--font-color);
-  transition: opacity .2s linear;
+  transition: all .2s linear;
 }
 a:hover {
   opacity: .8;
+  transform: scale(1.05);
   border-bottom-style: solid;
-  transition: opacity .2s linear;
+  transition: all .2s linear;
 }
 svg path {
   fill: var(--font-color);
@@ -350,7 +351,7 @@ code {
 }
 
 .-45deg {
-  transform: rotate(-45deg);
+  transform: rotateZ(-45deg);
 }
 
 /* scrollbar */
