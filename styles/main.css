@@ -49,10 +49,13 @@ body::before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 30px; /* Регулируйте ширину угла */
-  height: 30px; /* Регулируйте высоту угла */
+  width: 20px; /* Регулируйте ширину угла */
+  height: 40px; /* Регулируйте высоту угла */
   background-color: var(--bg-color); /* Цвет угла */
-  border: solid 1px var(--font-color);
+  /*border: solid 1px var(--font-color);*/
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: var(--font-color);
   transform: rotate(45deg); /* Поворот на 45 градусов */
   z-index: 2; /* Поднимаем псевдоэлемент ниже контента */
 }
