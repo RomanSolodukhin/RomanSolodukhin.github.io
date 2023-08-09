@@ -138,6 +138,7 @@ main > .employment-record {
   main > . employment-record .details {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap-reverse;
   }
 }
 main > .employment-record:hover {
