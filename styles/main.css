@@ -463,11 +463,11 @@ code {
     page-break-after: always;
   }
   .employment-record {
-    break-after: auto;
+    page-break-after: auto;
     break-inside: avoid;
   }
   #additional-information {
-    break-before: always;
+    page-break-before: always;
   }
   body footer .expand-icon, footer .collapse-icon {
     display: none;
