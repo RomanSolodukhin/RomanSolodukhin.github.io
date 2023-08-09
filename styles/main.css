@@ -139,6 +139,8 @@ main > .employment-record {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    max-width: 100%;
+    white-space: pre-wrap;
   }
 }
 main > .employment-record:hover {
