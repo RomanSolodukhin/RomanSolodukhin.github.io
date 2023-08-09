@@ -78,6 +78,11 @@ header,aside,main,footer {
   border-style: solid;
   border-width: 1px;
 }
+@media (max-width: 768px) {
+  header,aside,main {
+    padding: 10px;
+  }
+}
 header,aside,main {
   padding: 10px;
 }
