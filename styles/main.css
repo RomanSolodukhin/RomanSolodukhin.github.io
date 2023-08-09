@@ -2,7 +2,7 @@
   --dark-theme-bg-color: rgba(26, 26, 26, 1);
   --dark-theme-font-color: rgba(240, 230, 215, 1);
   --light-theme-bg-color: rgba(240, 210, 200, 1);
-  --light-theme-font-color: rgba(26, 26, 26, 1);
+  --light-theme-font-color: rgba(33, 13, 0, 1);
   --base-pixel-font: 'DotGothic16';
 }
 @font-face {
@@ -343,7 +343,6 @@ code {
 ::-webkit-scrollbar-thumb {
   cursor: pointer !important;
   box-sizing: border-box;
-  border-radius: 5px;
   background: var(--font-color);
   border: 1px solid var(--bg-color);
 }
