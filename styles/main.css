@@ -135,10 +135,10 @@ main > .employment-record {
     overflow-y: auto;
     max-width: 100%;
   }
-  main > . employment-record .details {
+  main > .employment-record .details {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
   }
 }
 main > .employment-record:hover {
