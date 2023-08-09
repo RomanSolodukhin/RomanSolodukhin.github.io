@@ -49,9 +49,10 @@ body::before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 20px; /* Регулируйте ширину угла */
-  height: 20px; /* Регулируйте высоту угла */
-  background-color: var(--font-color); /* Цвет угла */
+  width: 30px; /* Регулируйте ширину угла */
+  height: 30px; /* Регулируйте высоту угла */
+  background-color: var(--bg-color); /* Цвет угла */
+  right-border: solid 1px var(--font-color);
   transform: rotate(45deg); /* Поворот на 45 градусов */
   z-index: -1; /* Поднимаем псевдоэлемент ниже контента */
 }
@@ -59,7 +60,7 @@ body::before {
   section {
     overflow-y: auto;
     width: 100%;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   } 
 }
 @media (min-width: 768px) {
