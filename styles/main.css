@@ -47,17 +47,17 @@ body {
 body::before {
   content: "";
   position: absolute;
-  top: -5px;
-  left: -5px;
-  width: 30px; /* Регулируйте ширину угла */
-  height: 30px; /* Регулируйте высоту угла */
+  top: -10px;
+  left: -10px;
+  width: 40px; /* Регулируйте ширину угла */
+  height: 40px; /* Регулируйте высоту угла */
   background-color: var(--bg-color); /* Цвет угла */
   /*border: solid 1px var(--font-color);*/
   border-right-style: solid;
   border-right-width: 1px;
   border-right-color: var(--font-color);
   transform: rotate(45deg); /* Поворот на 45 градусов */
-  z-index: -1; /* Поднимаем псевдоэлемент ниже контента */
+  z-index: 1; /* Поднимаем псевдоэлемент ниже контента */
 }
 @media (max-width: 768px) {
   section {
