@@ -34,8 +34,13 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  height: 98vh;
+  position: absolutly;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
   padding: 0px;
+  margin: 0px;
   scrollbar-width: thin;
   scroll-behavior: smooth;
   border-color: var(--font-color);
