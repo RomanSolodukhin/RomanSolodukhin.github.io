@@ -138,6 +138,8 @@ main > .employment-record {
 @media (max-width: 768px) {
   main > .employment-record {
     flex-direction: column;
+    overflow-y: auto;
+    max-width: 100%;
   }
 }
 main > .employment-record:hover {
