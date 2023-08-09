@@ -312,9 +312,9 @@ a {
   align-items: center;
   color: var(--font-color);
   text-decoration: none;
-  bottom-border-style: dashed;
-  bottom-border-width: 1px;
-  bottom-border-color: var(--font-color);
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--font-color);
   transition: opacity .2s linear;
 }
 a:hover {
