@@ -49,8 +49,8 @@ body::before {
   position: absolute;
   top: -10px;
   left: -10px;
-  width: 40px; /* Регулируйте ширину угла */
-  height: 40px; /* Регулируйте высоту угла */
+  width: 60px; /* Регулируйте ширину угла */
+  height: 60px; /* Регулируйте высоту угла */
   background-color: var(--bg-color); /* Цвет угла */
   /*border: solid 1px var(--font-color);*/
   border-right-style: solid;
