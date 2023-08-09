@@ -242,9 +242,15 @@ footer {
 }
 @media (max-width: 768px) {
   footer {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     max-height: 60px;
     margin-bottom: 60px;
+  }
+  footer div:not(:last-child) {
+    border-bottom-style: dashed;
+    border-bottom-color: var(--font-color);
+    border-bottom-width: 1px;
   }
   footer #number {
     display: flex;
