@@ -246,6 +246,10 @@ footer {
     max-height: 60px;
     position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
+    left-border-color: transparent;
+    right-border-color: transparent;
     margin: 10px;
   }
   footer #number {
