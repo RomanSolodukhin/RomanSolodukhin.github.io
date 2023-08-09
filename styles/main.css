@@ -311,7 +311,7 @@ a {
   display: flex;
   align-items: center;
   color: var(--font-color);
-  underline: none;
+  text-decoration: none;
   bottom-border-style: dashed;
   bottom-border-width: 1px;
   bottom-border-color: var(--font-color);
