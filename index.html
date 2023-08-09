@@ -21,46 +21,53 @@
   <body mode="dark">
     <header>
       <span>
-        <div class="name copied" title="Copy on click: Roman Solodukhin" onclick="copyText('name')">
+        <div class="name copied title" title="Copy on click: Roman Solodukhin" onclick="copyText('name')">
           <svg-icon icon="account-box" class="svg-icon-big"></svg-icon>
           <h1 id="name">
             Roman Solodukhin
           </h1>
         </div>
-        <button type="button" id="button-dark-on">Dark<svg-icon class="svg-icon-big" icon="toggle-switch-off"></svg-icon></button>
-        <button type="button" id="button-light-on">Light<svg-icon class="svg-icon-big" icon="toggle-switch-on"></svg-icon></button>
+        <nav class="h-menu">
+          <button type="button" id="print" title="Save as PDF or print" onclick="window.print()"><label no-mobile>Save PDF</label><svg-icon class="svg-icon-big" icon="floppy"></svg-icon></button>
+          <button type="button" id="button-dark-on"><label no-mobile>Dark</label><svg-icon class="svg-icon-big" icon="toggle-switch-off"></svg-icon></button>
+          <button type="button" id="button-light-on"><label no-mobile>Light</label><svg-icon class="svg-icon-big" icon="toggle-switch-on"></svg-icon></button>
+        </nav>
       </span>
-      <span class="keys">
-        <div class="key hover-focus" title="QA Engineer&#10;Game Testing Specialist">
-          <svg-icon class="svg-icon" icon="bug"></svg-icon>
-          <label class="pixelated">
-            QA Engineer
-          </label>
-        </div>
-        <div class="key hover-focus" title="Game Development">
-          <svg-icon class="svg-icon" icon="device"></svg-icon>
-          <label class="pixelated">
-            GameDev
-          </label>
-        </div>
-        <div class="key hover-focus" title="5 years experience in gamedev">
-          <svg-icon class="svg-icon" icon="clock"></svg-icon>
-          <label class="pixelated">
-            5 years experience
-          </label>
-        </div>
-        <div class="key hover-focus" title="28 years old man">
-          <svg-icon class="svg-icon" icon="battery-75"></svg-icon>
-          <label class="pixelated">
-            28 y.o.
-          </label>
-        </div>
-        <div class="key hover-focus" title="Cyprus, Limassol">
-          <svg-icon class="svg-icon" icon="compass"></svg-icon>
-          <label class="pixelated">
-            Cyprus, Limassol
-          </label>
-        </div>
+      <span>
+        <button type="button" style="display: none;" onclick="scrollElement('keys', -100, 'keys-scroll-left-button', 'keys-scroll-right-button')" id="keys-scroll-left-button" class="scroll-arrow-button"><svg-icon class="svg-icon" icon="arrow-left"></svg-icon></button>
+        <span class="keys" id="keys">
+          <div class="key hover-focus" title="QA Engineer&#10;Game Testing Specialist">
+            <svg-icon class="svg-icon" icon="bug"></svg-icon>
+            <label class="pixelated">
+              QA Engineer
+            </label>
+          </div>
+          <div class="key hover-focus" title="Game Development">
+            <svg-icon class="svg-icon" icon="device"></svg-icon>
+            <label class="pixelated">
+              GameDev
+            </label>
+          </div>
+          <div class="key hover-focus" title="5 years experience in gamedev">
+            <svg-icon class="svg-icon" icon="clock"></svg-icon>
+            <label class="pixelated">
+              5 years experience
+            </label>
+          </div>
+          <div class="key hover-focus" title="28 years old man">
+            <svg-icon class="svg-icon" icon="battery-75"></svg-icon>
+            <label class="pixelated">
+              28 y.o.
+            </label>
+          </div>
+          <div class="key hover-focus" title="Cyprus, Limassol">
+            <svg-icon class="svg-icon" icon="compass"></svg-icon>
+            <label class="pixelated">
+              Cyprus, Limassol
+            </label>
+          </div>
+        </span>
+        <button type="button" onclick="scrollElement('keys', 100, 'keys-scroll-left-button', 'keys-scroll-right-button')" class="scroll-arrow-button" id="keys-scroll-right-button"><svg-icon class="svg-icon" icon="arrow-right"></svg-icon></button>
       </span>
     </header>
     <section>
@@ -146,16 +153,16 @@
               <summary>Browser and Social Games Testing Specialist, Level 2
               </summary>
               <p>
-              - Participated in development and operation of game projects such as "Легенда: Наследие
-              Драконов" (dwar.ru) (Web, Windows, Android, iOS), "War of Dragons" (eu) and other.
-              - Administration of Jira task tracker
-              - Interaction with Product Owner to gather requirements for new features
-              - Writing technical specifications and creating tasks for development team
-              - Prioritizing and setting deadlines for development tasks
-              - Manual QA testing using checklists, test cases, and test plans
-              - Reporting and tracking issues found during QA testing
-              - Monitoring and improving software quality using Grafana metrics, Google Analytics, Search
-              Console, 1link and other dashboards
+- Participated in development and operation of game projects such as "Легенда: Наследие
+Драконов" (dwar.ru) (Web, Windows, Android, iOS), "War of Dragons" (eu) and other.
+- Administration of Jira task tracker
+- Interaction with Product Owner to gather requirements for new features
+- Writing technical specifications and creating tasks for development team
+- Prioritizing and setting deadlines for development tasks
+- Manual QA testing using checklists, test cases, and test plans
+- Reporting and tracking issues found during QA testing
+- Monitoring and improving software quality using Grafana metrics, Google Analytics, Search
+Console, 1link and other dashboards
               </p>
             </details>
           </div>
@@ -174,13 +181,13 @@
               <summary>Senior Game Tester (Manual)
               </summary>
               <p>
-              - Designed test cases, checklists, mind maps, and simple tools for their creation (Google Apps
-              Scripts)
-              - Manual QA testing
-              - Contributed to the launch of French version of Rise of Angels (browser-based, flash) and
-              Russian version of Eternal Fury 2 (browser-based, HTML5)
-              - Worked on projects such as MyPocketStars, Dragon Knight, Dragon Knight 2, Guns'n'Magic,
-              and Keepers of the Rift
+- Designed test cases, checklists, mind maps, and simple tools for their creation (Google Apps
+Scripts)
+- Manual QA testing
+- Contributed to the launch of French version of Rise of Angels (browser-based, flash) and
+Russian version of Eternal Fury 2 (browser-based, HTML5)
+- Worked on projects such as MyPocketStars, Dragon Knight, Dragon Knight 2, Guns'n'Magic,
+and Keepers of the Rift
               </p>
             </details>
           </div>
@@ -199,17 +206,17 @@
               <summary>Localization Projects Coordinator
               </summary>
               <p>
-              - Controlled document versions (Whitepaper, Onepager, Smartpaper) and updates
-              - Coordinated localization tasks for 14 languages
-              - Coordinated internal resources (translators, designers, engineers, developers) and external
-              contractors for project localization (The Abyss DAICO website, technical documents, subtitles,
-              graphics, etc.)
-              - Administered SmartCAT workspace
-              - Performed Manual QA testing
-              - Edited and proofread (English-Russian)
-              - Formatted documents
-              - Sourced external contractors
-              - Created technical documentation
+- Controlled document versions (Whitepaper, Onepager, Smartpaper) and updates
+- Coordinated localization tasks for 14 languages
+- Coordinated internal resources (translators, designers, engineers, developers) and external
+contractors for project localization (The Abyss DAICO website, technical documents, subtitles,
+graphics, etc.)
+- Administered SmartCAT workspace
+- Performed Manual QA testing
+- Edited and proofread (English-Russian)
+- Formatted documents
+- Sourced external contractors
+- Created technical documentation
               </p>
             </details>
           </div>
@@ -228,9 +235,9 @@
               <summary>Junior Game Master/QA
               </summary>
               <p>
-              - Participated in development and operation of game project Botva.Online
-              - Manual QA testing using checklists, test cases, and test plans
-              - Reporting and tracking issues found during QA testing
+- Participated in development and operation of game project Botva.Online
+- Manual QA testing using checklists, test cases, and test plans
+- Reporting and tracking issues found during QA testing
               </p>
             </details>
           </div>
@@ -249,12 +256,12 @@
               <summary>Customer Support Specialist
               </summary>
               <p>
-              - Provided user support for gaming projects and web services in Russian and English via Kayako
-              - Prepared a knowledge base (instructions, troubleshooting guides)
-              - Configured Kayako and Zendesk
-              - Trained junior staff members
-              - Tested company projects
-              - Worked with logs
+- Provided user support for gaming projects and web services in Russian and English via Kayako
+- Prepared a knowledge base (instructions, troubleshooting guides)
+- Configured Kayako and Zendesk
+- Trained junior staff members
+- Tested company projects
+- Worked with logs
               </p>
             </details>
           </div>
@@ -273,12 +280,12 @@
               <summary>Junior Game Developer (part time)
               </summary>
               <p>
-                - Administering the game for up to 1000 online players
-                - Coding game mechanics scripts using Pawn and Cleo programming languages
-                - Designing game levels and maps using Texture Studio and Map Editor
-                Solodukhin Roman • 2023
-                - Moderating the game's forum
-                - Processing user inquiries and support requests.
+- Administering the game for up to 1000 online players
+- Coding game mechanics scripts using Pawn and Cleo programming languages
+- Designing game levels and maps using Texture Studio and Map Editor
+Solodukhin Roman • 2023
+- Moderating the game's forum
+- Processing user inquiries and support requests.
               </p>
             </details>
           </div>
@@ -297,7 +304,7 @@
             </p>
           </div>
         </span>
-        <div>
+        <div id="additional-information">
           <h1>Additional information</h1>
           <label class="title pixelated">
             <svg-icon class="svg-icon" icon="bulb"></svg-icon>
@@ -377,25 +384,32 @@
         </div>
       </aside>
     </section>
-    <footer>
+    <footer id="footer">
       <div id="contacts">
-        <svg-icon class="svg-icon" icon="message-text"></svg-icon>
-        <label class="pixelated">
-          Contacts
-        </label>
-      </div>
-      <div id="telegram" title="text me via Telegram">
-        <a href="https://t.me/+35794417124"><svg-icon class="svg-icon" icon="send" style="transform: rotateZ(-45deg);"></svg-icon>@tosorrow</a>
-      </div>
-      <div id="linkedin" title="text me via Linkedin">
-        <a href="https://www.linkedin.com/in/roman-solodukhin/"><svg-icon class="svg-icon" icon="linkedin" alt="linkedin"></svg-icon></a>
-      </div>
-      <div id="phone" class="copied" onclick="copyText('phone-number')" title="Copy on click: +357 (94) 417-124">
-        <b id="phone-number">+357 (94) 417-124</b>
-      </div>
-      <div id="email" class="title copied" onclick="copyText('email-text')" title="Copy on click: mauvaistonn@gmail.com">
-        <svg-icon class="svg-icon" icon="email"></svg-icon>
-        <p id="email-text">mauvaistonn@gmail.com</p>
+        <div id="contact-title">
+          <button type="button" onclick="toggleExpand('footer')">
+            <svg-icon class="svg-icon" icon="message-text"></svg-icon>
+            <label class="pixelated">
+              Contacts
+            </label>
+            <svg-icon mobile class="svg-icon expand-icon" icon="chevron-up-circle"></svg-icon>
+            <svg-icon mobile class="svg-icon collapse-icon" icon="chevron-down-circle"></svg-icon>
+          </button>
+        </div>
+        <div id="telegram" title="text me via Telegram">
+          <a href="https://t.me/+35794417124" target="_blank"><svg-icon class="svg-icon" icon="send" style="transform: rotateZ(-45deg);"></svg-icon>@tosorrow</a>
+        </div>
+        <div id="linkedin" title="text me via Linkedin">
+          <a href="https://www.linkedin.com/in/roman-solodukhin/" target="_blank"><svg-icon class="svg-icon" icon="linkedin" alt="linkedin"></svg-icon>Roman Solodukhin</a>
+        </div>
+        <div id="email" class="title copied" onclick="copyText('email-text')" title="Copy on click: mauvaistonn@gmail.com">
+          <svg-icon class="svg-icon" icon="email"></svg-icon>
+          <p id="email-text">mauvaistonn@gmail.com</p>
+        </div>
+        <div id="phone" class="copied" onclick="copyText('phone-number')" title="Copy on click: +357 (94) 417-124">
+          <svg-icon class="svg-icon" icon="cellphone"></svg-icon>
+          <b id="phone-number">+357 (94) 417-124</b>
+        </div>
       </div>
     </footer>
   </body>

@@ -69,7 +69,13 @@ const SvgIcons = {
   'bulb': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><title>lightbulb</title><path fill="currentColor" d="M8 19H14V21H8V19M8 18V14H7V13H6V12H5V11H4V5H5V4H6V3H7V2H8V1H14V2L15 2V3H16V4H17V5H18V11H17V12H16V13H15V14H14V18H8M13 12H14V11H15V10H16V6H15V5H14V4L13 4V3H9V4H8V5H7V6H6V10H7V11H8V12H9V13H10V16H12V13H13V12Z" /></svg>`,
   'diamond': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><title>diamond</title><path fill="currentColor" d="M6 2H16V3H17V4H18V5H19V6H20V12H19V13H18V14H17V15H16V16H15V17H14V18H13V19H12V20H10V19H9V18H8V17H7V16H6V15H5V14H4V13H3V12H2V6H3V5H4V4H5V3H6V2M15 5V4H14V6H15V7H17V6H16V5H15M12 6V4H10V6H9V7H13V6H12M8 6V4H7V5H6V6H5V7H7V6H8M4 11H5V12H6V13H7V14H8V12H7V9H4V11M10 12V16H12V12H13V9H9V12H10M14 12V14H15V13H16V12H17V11H18V9H15V12H14Z" /></svg>`,
   'send': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>send</title><path fill="currentColor" d="M2,21L23,12L2,3V10L17,12L2,14V21Z" /></svg>`,
-  'linkedin': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>linkedin</title><path fill="currentColor" d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" /></svg>`
+  'linkedin': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>linkedin</title><path fill="currentColor" d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" /></svg>`,
+  'arrow-right': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><title>arrow-right</title><path fill="currentColor" d="M17 10V12H16V13H15V14H14V15H13V16H11V14H12V13H13V12H4V10H13V9H12V8H11V6H13V7H14V8H15V9H16V10" /></svg>`,
+  'arrow-left': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><title>arrow-left</title><path fill="currentColor" d="M5 12V10H6V9H7V8H8V7H9V6H11V8H10V9H9V10H18V12H9V13H10V14H11V16H9V15H8V14H7V13H6V12" /></svg>`,
+  'cellphone': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>cellphone-basic</title><path fill="currentColor" d="M15,2A1,1 0 0,0 14,3V6H10C8.89,6 8,6.89 8,8V20C8,21.11 8.89,22 10,22H15C16.11,22 17,21.11 17,20V8C17,7.26 16.6,6.62 16,6.28V3A1,1 0 0,0 15,2M10,8H15V13H10V8M10,15H11V16H10V15M12,15H13V16H12V15M14,15H15V16H14V15M10,17H11V18H10V17M12,17H13V18H12V17M14,17H15V18H14V17M10,19H11V20H10V19M12,19H13V20H12V19M14,19H15V20H14V19Z" /></svg>`,
+  'chevron-up-circle': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><title>chevron-up-circle</title><path fill="currentColor" d="M6 13V11H7V10H8V9H9V8H10V7H12V8H13V9H14V10H15V11H16V13H14V12H13V11H12V10H10V11H9V12H8V13H6M15 1V2H17V3H18V4H19V5H20V7H21V15H20V17H19V18H18V19H17V20H15V21H7V20H5V19H4V18H3V17H2V15H1V7H2V5H3V4H4V3H5V2H7V1H15M14 3H8V4H6V5H5V6H4V8H3V14H4V16H5V17H6V18H8V19H14V18H16V17H17V16H18V14H19V8H18V6H17V5H16V4H14V3Z" /></svg>`,
+  'chevron-down-circle': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><title>chevron-down-circle</title><path fill="currentColor" d="M16 9V11H15V12H14V13H13V14H12V15H10V14H9V13H8V12H7V11H6V9H8V10H9V11H10V12H12V11H13V10H14V9H16M15 1V2H17V3H18V4H19V5H20V7H21V15H20V17H19V18H18V19H17V20H15V21H7V20H5V19H4V18H3V17H2V15H1V7H2V5H3V4H4V3H5V2H7V1H15M14 3H8V4H6V5H5V6H4V8H3V14H4V16H5V17H6V18H8V19H14V18H16V17H17V16H18V14H19V8H18V6H17V5H16V4H14V3Z" /></svg>`,
+  'floppy': `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><title>floppy-disk</title><path fill="currentColor" d="M2 3H3V2H16V3H17V4H18V5H19V6H20V19H19V20H3V19H2V3M18 7H17V6H16V5H15V9H6V4H4V18H6V13H16V18H18V7M11 4V7H13V4H11M14 18V15H8V18H14Z" /></svg>`
 };
 
 class SvgIcon extends HTMLElement {
@@ -96,4 +102,39 @@ function copyText(elementID) {
   }).catch(function(err) {
     console.error('Не удалось скопировать текст: ', err);
   });
-}
+};
+
+function isScrollingRight(elementID) {
+  const scrollableElement = document.getElementById(elementID);
+  console.log(scrollableElement.scrollLeft);
+  return scrollableElement.scrollLeft + scrollableElement.clientWidth === scrollableElement.scrollWidth;
+};
+
+function scrollElement (elementID, offset, buttonLeft, buttonRight) {
+  const scrollableElement = document.getElementById(elementID); 
+  scrollableElement.scrollLeft += offset;
+  if (scrollableElement.scrollLeft === 0) {
+    document.getElementById(buttonLeft).style.display = 'none';
+  } else {
+    document.getElementById(buttonLeft).style.display = '';
+  }
+  if (isScrollingRight(elementID)) {
+    document.getElementById(buttonRight).style.display = 'none';
+  } else document.getElementById(buttonRight).style.display = '';
+};
+
+function toggleExpand (elementID) {
+  console.log('toggle expand', elementID);
+  const element = document.getElementById(elementID);
+  if (element.getAttribute('expanded')) {
+    element.removeAttribute('expanded');
+  } else element.setAttribute('expanded', 'true');
+};
+
+window.addEventListener('beforeprint', () => {
+  [].forEach.call(document.querySelectorAll('details'), el => el.setAttribute('open', ''));
+});
+
+window.addEventListener('afterprint', () => {
+  [].forEach.call(document.querySelectorAll('details'), el => el.removeAttribute('open'));
+});
