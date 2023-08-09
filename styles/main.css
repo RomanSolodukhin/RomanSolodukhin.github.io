@@ -80,7 +80,7 @@ header,aside,main,footer {
 }
 @media (max-width: 768px) {
   header,aside,main {
-    padding: 10px;
+    margin-bottom: 10px;
   }
 }
 header,aside,main {
