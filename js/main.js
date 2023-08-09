@@ -140,3 +140,11 @@ window.addEventListener('beforeprint', () => {
 window.addEventListener('afterprint', () => {
   [].forEach.call(document.querySelectorAll('details'), el => el.removeAttribute('open'));
 });
+
+function setBodyHeight() {
+  const windowHeight = window.innerHeight;
+  document.body.style.height = windowHeight + 'px';
+};
+
+window.addEventListener('load', setBodyHeight);
+window.addEventListener('resize', setBodyHeight);
