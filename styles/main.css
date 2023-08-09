@@ -52,7 +52,7 @@ body::before {
   width: 30px; /* Регулируйте ширину угла */
   height: 30px; /* Регулируйте высоту угла */
   background-color: var(--bg-color); /* Цвет угла */
-  right-border: solid 1px var(--font-color);
+  border: solid 1px var(--font-color);
   transform: rotate(45deg); /* Поворот на 45 градусов */
   z-index: 2; /* Поднимаем псевдоэлемент ниже контента */
 }
@@ -92,7 +92,6 @@ header > span div {
 }
 header .keys {
   overflow-x: auto;
-  flex-wrap: wrap;
 }
 header > span div.key {
   justify-content: center;
