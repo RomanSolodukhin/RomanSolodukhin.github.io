@@ -108,7 +108,6 @@ function copyText(elementID) {
 function isScrollingRight(elementID) {
   const scrollableElement = document.getElementById(elementID);
   const result = scrollableElement.scrollLeft + scrollableElement.clientWidth;
-  console.log(scrollableElement.scrollWidth - result);
   return scrollableElement.scrollWidth - result > 60;
 };
 
