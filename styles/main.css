@@ -245,6 +245,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
+    margin: 10px;
   }
   footer #number {
     display: flex;
