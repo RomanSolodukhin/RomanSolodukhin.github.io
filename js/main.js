@@ -112,7 +112,9 @@ function isScrollingRight(elementID) {
 
 function scrollElement (elementID, offset, buttonLeft, buttonRight) {
   const scrollableElement = document.getElementById(elementID); 
-  scrollableElement.scrollLeft += offset;
+  if (offset > 0) {
+    scrollableElement.scrollLeft += offset;
+  }
   if (scrollableElement.scrollLeft === 0) {
     document.getElementById(buttonLeft).style.display = 'none';
   } else {

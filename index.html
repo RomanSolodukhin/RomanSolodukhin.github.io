@@ -34,8 +34,15 @@
         </nav>
       </span>
       <span>
-        <button type="button" style="display: none;" onclick="scrollElement('keys', -100, 'keys-scroll-left-button', 'keys-scroll-right-button')" id="keys-scroll-left-button" class="scroll-arrow-button"><svg-icon class="svg-icon" icon="arrow-left"></svg-icon></button>
-        <span class="keys" id="keys">
+        <button
+          type="button"
+          style="display: none;"
+          onclick="scrollElement('keys', -100, 'keys-scroll-left-button', 'keys-scroll-right-button')"
+          id="keys-scroll-left-button"
+          class="scroll-arrow-button">
+          <svg-icon class="svg-icon" icon="arrow-left"></svg-icon>
+        </button>
+        <span onscroll="scrollElement('keys', 0, 'keys-scroll-left-button', 'keys-scroll-right-button')" class="keys" id="keys">
           <div class="key hover-focus" title="QA Engineer&#10;Game Testing Specialist">
             <svg-icon class="svg-icon" icon="bug"></svg-icon>
             <label class="pixelated">
@@ -400,11 +407,12 @@ Solodukhin Roman • 2023
           <a href="https://t.me/+35794417124" target="_blank"><svg-icon class="svg-icon" icon="send" style="transform: rotateZ(-45deg);"></svg-icon>@tosorrow</a>
         </div>
         <div id="linkedin" title="text me via Linkedin">
-          <a href="https://www.linkedin.com/in/roman-solodukhin/" target="_blank"><svg-icon class="svg-icon" icon="linkedin" alt="linkedin"></svg-icon>Roman Solodukhin</a>
+          <a href="https://www.linkedin.com/in/roman-solodukhin/" target="_blank">
+            <svg-icon class="svg-icon" icon="linkedin" alt="linkedin"></svg-icon>Roman Solodukhin</a>
         </div>
-        <div id="email" class="title copied" onclick="copyText('email-text')" title="Copy on click: mauvaistonn@gmail.com">
+        <div id="email" class="copied" onclick="copyText('email')" title="Copy on click: mauvaistonn@gmail.com">
           <svg-icon class="svg-icon" icon="email"></svg-icon>
-          <p id="email-text">mauvaistonn@gmail.com</p>
+          mauvaistonn@gmail.com
         </div>
         <div id="phone" class="copied" onclick="copyText('phone-number')" title="Copy on click: +357 (94) 417-124">
           <svg-icon class="svg-icon" icon="cellphone"></svg-icon>
