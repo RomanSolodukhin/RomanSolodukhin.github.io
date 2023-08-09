@@ -106,7 +106,6 @@ function copyText(elementID) {
 
 function isScrollingRight(elementID) {
   const scrollableElement = document.getElementById(elementID);
-  console.log(scrollableElement.scrollLeft);
   return scrollableElement.scrollLeft + scrollableElement.clientWidth === scrollableElement.scrollWidth;
 };
 
@@ -126,7 +125,6 @@ function scrollElement (elementID, offset, buttonLeft, buttonRight) {
 };
 
 function toggleExpand (elementID) {
-  console.log('toggle expand', elementID);
   const element = document.getElementById(elementID);
   if (element.getAttribute('expanded')) {
     element.removeAttribute('expanded');
