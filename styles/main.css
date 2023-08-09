@@ -350,7 +350,7 @@ code {
   font-size: 16px;
 }
 
-.-45deg {
+.minus45deg {
   transform: rotateZ(-45deg);
 }
 
