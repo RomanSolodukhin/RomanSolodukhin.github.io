@@ -135,6 +135,10 @@ main > .employment-record {
     overflow-y: auto;
     max-width: 100%;
   }
+  main > . employment-record .details {
+    display: flex;
+    flex-direction: column;
+  }
 }
 main > .employment-record:hover {
   background-color: rgba(66, 66, 66, .5);
