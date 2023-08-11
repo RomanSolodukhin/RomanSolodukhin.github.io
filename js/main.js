@@ -148,3 +148,30 @@ function setBodyHeight() {
 
 window.addEventListener('load', setBodyHeight);
 window.addEventListener('resize', setBodyHeight);
+
+function scrollToElement(id) {
+  const element = document.getElementById(id);
+  if (element) {
+    const offset = element.getBoundingClientRect().top + window.scrollY;
+
+    window.scrollTo({
+      top: offset,
+      behavior: 'smooth'
+    });
+  }
+}
+
+function handleHashChange() {
+  const url = window.location.href;
+  const anchorIndex = url.indexOf('#');
+  if (anchorIndex !== -1) {
+      const anchorId = url.substring(anchorIndex + 1);
+      scrollToElement(anchorId);
+  }
+};
+
+window.addEventListener('load', () => {
+  handleHashChange();
+});
+
+window.addEventListener('hashchange', handleHashChange);
