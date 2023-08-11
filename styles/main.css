@@ -57,7 +57,7 @@ body {
     height: 100%;
   }
 }
-header,aside,main,footer {
+header, aside, main, footer {
   border-style: solid;
   border-width: 1px;
 }
@@ -66,7 +66,7 @@ header,aside,main,footer {
     margin-bottom: 10px;
   }
 }
-header,aside,main {
+header, aside, main {
   padding: 10px;
 }
 header {
@@ -432,6 +432,8 @@ code {
   body {
     overflow: visible;
     height: auto;
+    position: relative;
+    top: 10px;
   }
   body[mode="dark"]::after,
   body[mode="dark"] section::after,
@@ -486,7 +488,6 @@ code {
     overflow: visible;
   }
   body main {
-    overflow: visible;
     page-break-before: always;
     page-break-after: always;
   }
