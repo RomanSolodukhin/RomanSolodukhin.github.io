@@ -511,6 +511,9 @@ code {
     height: fit-content !important;
     max-width: 100vw !important;
   }
+  #email {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
   #telegram-login::after {
     margin-left: 10px;
     content: '– preferred contact method';
