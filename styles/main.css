@@ -87,12 +87,16 @@ header .keys {
   overflow-x: auto;
   align-items: center;
   justify-content: space-between;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 
 header > span div.key {
   justify-content: center;
   flex: 25%;
   transition: all .2s linear;
+  scroll-snap-align: start;
+  scroll-margin: 0;
 }
 .hover-focus:hover {
   padding-left: 15px;
