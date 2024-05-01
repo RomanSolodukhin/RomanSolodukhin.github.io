@@ -113,12 +113,12 @@ body[mode="light"] .hover-focus:hover {
 button.hidden {
   opacity: 0;
   max-width: 0px;
-  transition: all .2s linear;
+  transition: all .5s linear;
 }
 button:not(.hidden) {
   opacity: 1;
   max-width: 200px;
-  transition: all .2s linear;
+  transition: all 1s linear;
 }
 header > span div.key:not(:last-child) {
   border-right-width: 1px;
