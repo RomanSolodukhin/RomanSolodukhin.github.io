@@ -110,6 +110,16 @@ body[mode="dark"] .hover-focus:hover {
 body[mode="light"] .hover-focus:hover {
   background-color: rgba(133, 133, 133, .5);
 }
+button.hidden {
+  opacity: 0;
+  max-width: 0px;
+  transition: all .2s linear;
+}
+button:not(.hidden) {
+  opacity: 1;
+  max-width: 200px;
+  transition: all .2s linear;
+}
 header > span div.key:not(:last-child) {
   border-right-width: 1px;
   border-right-style: dashed;
