@@ -25,12 +25,13 @@ body[mode="light"] {
   scrollbar-color: var(--base-font-color);
 }
 body[mode="dark"] #button-dark-on {
-  display: none;
+  opacity: 0;
 }
 body[mode="light"] #button-light-on {
-  display: none;
+  opacity: 0;
 }
 body {
+  opacity: 1;
   display: flex;
   flex-direction: column;
   overflow: auto;
