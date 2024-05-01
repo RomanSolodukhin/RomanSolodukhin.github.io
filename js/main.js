@@ -118,12 +118,17 @@ function scrollElement (elementID, offset, buttonLeft, buttonRight) {
   }
   if (scrollableElement.scrollLeft === 0) {
     document.getElementById(buttonLeft).style.opacity = '0';
+    document.getElementById(buttonLeft).style.width = '0px';
   } else {
     document.getElementById(buttonLeft).style.opacity = '1';
+    document.getElementById(buttonLeft).style.width = 'auto';
   }
   if (isScrollingRight(elementID)) {
     document.getElementById(buttonRight).style.opacity = '1';
-  } else document.getElementById(buttonRight).style.opacity = '0';
+    document.getElementById(buttonRight).style.width = 'auto';
+  } else {
+    document.getElementById(buttonRight).style.opacity = '0';
+    document.getElementById(buttonRight).style.width = '0px';
 };
 
 function toggleExpand (elementID) {
