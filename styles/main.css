@@ -506,12 +506,16 @@ code {
     border: solid 1px transparent;
   }
   body section {
+    display: block !important;
     overflow: visible;
     height: auto;
   }
   main, aside {
+    display: block !important;
     overflow: visible !important;
     height: auto !important;
+    width: 100% !important;
+    flex: none !important;
   }
   body main {
     page-break-before: always;
