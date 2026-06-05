@@ -451,6 +451,7 @@ code {
 /* print, save pdf version */
 @media print {
   body {
+    display: block !important;
     overflow: visible;
     height: auto;
     position: relative;
