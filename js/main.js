@@ -175,3 +175,36 @@ window.addEventListener('load', () => {
 });
 
 window.addEventListener('hashchange', handleHashChange);
+
+const BIRTH_DATE = new Date(1995, 0, 10); // 10 January 1995
+
+function getAge(birthDate) {
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
+};
+
+function updateDynamicContent() {
+  const age = getAge(BIRTH_DATE);
+
+  const ageLabel = document.getElementById('age');
+  if (ageLabel) {
+    ageLabel.textContent = age + ' y.o.';
+  }
+
+  const ageKey = document.getElementById('age-key');
+  if (ageKey) {
+    ageKey.setAttribute('title', age + ' years old man');
+  }
+
+  const footerYear = document.getElementById('footer-year');
+  if (footerYear) {
+    footerYear.textContent = new Date().getFullYear();
+  }
+};
+
+window.addEventListener('load', updateDynamicContent);

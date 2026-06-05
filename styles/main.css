@@ -296,6 +296,14 @@ footer {
 footer #phone-number {
   white-space: nowrap;
 }
+#copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0.7;
+  font-size: 0.8em;
+}
 #contacts > div {
   box-sizing: border-box;
   flex: auto;
