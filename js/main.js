@@ -200,11 +200,6 @@ function updateDynamicContent() {
   if (ageKey) {
     ageKey.setAttribute('title', age + ' years old man');
   }
-
-  const footerYear = document.getElementById('footer-year');
-  if (footerYear) {
-    footerYear.textContent = new Date().getFullYear();
-  }
 };
 
 window.addEventListener('load', updateDynamicContent);
