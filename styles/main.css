@@ -515,7 +515,6 @@ code {
     display: block !important;
     overflow: visible !important;
     height: auto !important;
-    width: 100% !important;
     flex: none !important;
   }
   body main {
