@@ -507,6 +507,11 @@ code {
   }
   body section {
     overflow: visible;
+    height: auto;
+  }
+  main, aside {
+    overflow: visible !important;
+    height: auto !important;
   }
   body main {
     page-break-before: always;
@@ -526,6 +531,7 @@ code {
     display: block !important;
     position: static !important;
     height: auto !important;
+    break-inside: avoid;
   }
   body footer #contacts {
     display: block;
